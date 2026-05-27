@@ -1,4 +1,4 @@
-{% set version = "25-11-5-1" %}
+{% set version = "26-05-0-1" %}
 {% set build = 0 %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/SchedMD/slurm/archive/refs/tags/slurm-{{ version }}.tar.gz
-    sha256: 2c0c10a8a04662aab7033c50a66f0db05e2f51a563de5dae250d37dba261a096
+    sha256: 449453cbd53df4bf2d06bc22d2703fc1cb5d0f52761f60cf3d783edfc57a9b77
 
 build:
   number: {{ build }}
@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - make
+    - pkg-config
   host:
     - munge
 
