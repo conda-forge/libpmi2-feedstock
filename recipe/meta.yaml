@@ -1,4 +1,4 @@
-{% set version = "26-05-3-1" %}
+{% set version = "26-05-4-1" %}
 {% set build = 0 %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/SchedMD/slurm/archive/refs/tags/slurm-{{ version }}.tar.gz
-    sha256: eeb2508a6307ecb08b385bc33e31497d4fc2e5c0c186a988f74b86ffb4bf38bf
+    sha256: 0e522d39324b7b7da5e8096c678c4af00500ca4c3fe2e6da7e4f8d01f7082ec7
 
 build:
   number: {{ build }}
